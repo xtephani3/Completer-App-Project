@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/Templates/Login/login.css" />
+<script src="/Templates/Login/login.js" defer></script>
+
+<form class="verification-form login-form-main">
+    <div class="checkmark-icon-container">
+        <img src="/assets/images/svg/checkmark.svg" />
+        <div class="checkmark-tiny-circle"></div>
+    </div>
+    <div class="user-welcome-container">
+        <h2 class="user-welcome">
+            Welcome Back!
+        </h2>
+        <p> Enter your details to access your account</p>
+    </div>
+    <div class="verify-toggle-container">
+        <a onclick="toggleForm('login-form')" class="login-toggle toggler">Login</a>
+        <a onclick="toggleForm('signup-form')" class="signup-toggle toggler">signup</a>
+    </div>
+    <div class="input-container">
+
+        <div class="input-wrap">
+            <label>Email Address*</label>
+            <input class="verification-input" type="email" placeholder="hello@example.com" required />
+            <img class="message-icon" src="/assets/images/svg/messageicon.svg" />
+        </div>
+
+        <div class="input-wrap">
+            <label>Password*</label>
+            <input class="verification-input" type="password" placeholder="••••••••" required />
+            <img class="padlock-icon" src="/assets/images/svg/padlock.svg" />
+        </div>
+    </div>
+    <div class="next-steps-container">
+        <a class="next-steps">Help?</a>
+        <img class="questionmark" src="/assets/images/svg/questionmark.svg" />
+        <a class="next-steps yellow-button">Next Step</a>
+    </div>
+    <footer>
+        <p class="agreement-footer">By continuing, you agree to our
+            <a>Terms of Service</a>
+            &
+            <a>Privacy Policy</a>
+        </p>
+        <p class="footer-credits">2024 TaskMaster | Made for university students</p>
+    </footer>
+</form>

@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/Templates/signup/signup.css" />
+<script src="/Templates/signup/signup.js" defer></script>
+<form class="authentication-form signup-form-main">
+    <div class="checkmark-icon-container">
+        <img src="/assets/images/svg/checkmark.svg" />
+        <div class="checkmark-yellow-circle"></div>
+    </div>
+    <div class="signup-user-welcome-container">
+        <h2 class="signup-user-welcome">
+            Join TaskMaster
+        </h2>
+        <p> Create an account to boost your productivity</p>
+    </div>
+    <div class="signup-toggle-container">
+        <a onclick="toggleForm('login-form')" class="login-toggle signup-toggler">Login</a>
+        <a onclick="toggleForm('signup-form')" class="signup-toggle signup-toggler">signup</a>
+    </div>
+    <div class="signup-input-container">
+        <div class="signup-input-wrap">
+            <label>Full Name*</label>
+            <input class="signup-verification-input " type="text" placeholder="Stephanie Ukamaka" required />
+            <img class="signup-user-icon" src="/assets/images/svg/usericon.svg" />
+        </div>
+        <div class="signup-input-wrap">
+            <label>Email Address*</label>
+            <input class="signup-verification-input " type="email" placeholder="hello@example.com" required />
+            <img class="signup-message-icon" src="/assets/images/svg/messageicon.svg" />
+        </div>
+        <div class="signup-input-wrap">
+            <label>Password*</label>
+            <input class="signup-verification-input" type="password" placeholder="••••••••" required />
+            <img class="padlock-icon" src="/assets/images/svg/padlock.svg" />
+            <span>Password must be at least 6 characters long</span>
+        </div>
+    </div>
+    <div class="signup-next-steps-container">
+        <a class="signup-next-steps">Help?</a>
+        <img class="signup-questionmark" src="/assets/images/svg/questionmark.svg" />
+        <a class="signup-next-steps signup-yellow-button">Next Step</a>
+    </div>
+    <footer>
+        <p class="signup-agreement-footer">By continuing, you agree to our
+            <a>Terms of Service</a>
+            &
+            <a>Privacy Policy</a>
+        </p>
+        <p class="signup-footer-credits">2024 TaskMaster | Made for university students</p>
+    </footer>
+</form>

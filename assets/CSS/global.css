@@ -1,0 +1,43 @@
+:root {
+    font-size: 10px;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --white-color: #fff;
+    --checkmark-blue: #404af9;
+    --heading-black: #101828;
+    --input-gray: #9aa4b3;
+    --button-yellow: #fcc500;
+    --button-gray: #f8f9fa;
+    --signup-gray: #f3f4f6;
+    --text-black: #3a3621;
+    --login-footer-gray: #868c99;
+    --tiny-circle-yellow: #fdc700;
+    --no-fill-circle-purple: #deeafa;
+    --no-fill-circle-yellow: #fff085;
+    --animated-circle-yellow: #f0b100;
+    --animated-circle-blue: #2b7fff;
+    --animated-circle-purple: #7c86ff;
+    --footer-terms-gray: #6a7282;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}

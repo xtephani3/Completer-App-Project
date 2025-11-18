@@ -1,0 +1,195 @@
+body {
+    background-image: var(--white-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem 0;
+}
+
+.verification-form {
+    z-index: 1;
+    position: relative;
+    height: 61.8rem;
+    width: 44.8rem;
+    background: white;
+    box-shadow: 0 2.5rem 5rem -1.2rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.6rem;
+    padding-top: 4rem;
+
+}
+
+.checkmark-icon-container {
+    background: var(--checkmark-blue);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1.6rem;
+    border: 1px solid var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.checkmark-tiny-circle {
+    position: absolute;
+    top: -0.7rem;
+    right: -1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: var(--tiny-circle-yellow);
+    border: 4px solid var(--white-color);
+    border-radius: 100%;
+}
+
+.user-welcome-container {
+    margin-bottom: 4.8rem;
+
+}
+
+.user-welcome {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.user-welcome-container p {
+    margin-top: 0.8rem;
+    color: #4a5565;
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+
+.verify-toggle-container {
+    display: flex;
+    background: var(--button-gray);
+    width: 40rem;
+    height: 3.6rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.2rem;
+    padding: 0.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.toggler {
+    width: 19.6rem;
+    height: 2.8rem;
+    text-decoration: none;
+    color: var(--text-black);
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: relative;
+}
+
+.input-wrap label {
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+.verification-input {
+    width: 40rem;
+    height: 4.8rem;
+    border-radius: 1.2rem;
+    border: 1px solid #ebe6e7;
+    padding: 0.4rem 1.2rem 0.4rem 4rem;
+    outline: none;
+}
+
+.verification-input:focus {
+    border: 0.1rem solid #6366f1;
+    outline: 0.3rem solid #3b83f697;
+}
+
+.verification-input::placeholder {
+    color: var(--input-gray);
+}
+
+.message-icon {
+    position: absolute;
+    left: 1.2rem;
+    top: 3.9rem;
+}
+
+.padlock-icon {
+    position: absolute;
+    left: 1.2rem;
+    top: 3.9rem;
+}
+
+.next-steps-container {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    width: 40rem;
+    height: 5.6rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.next-steps {
+    text-decoration: none;
+    width: 19.2rem;
+    height: 4.8rem;
+    padding: 0.8rem 1.2rem;
+    background: var(--button-gray);
+    border: 2px solid #e2e8f0;
+    border-radius: 1.2rem;
+    color: var(--text-black);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.questionmark {
+    position: absolute;
+    left: 15%;
+}
+
+.yellow-button {
+    background: var(--button-yellow);
+    border: none;
+    padding: 0.8rem 1.2rem;
+}
+
+.agreement-footer {
+    font-size: 1.2rem;
+    color: var(--footer-terms-gray);
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+.agreement-footer a {
+    text-decoration: none;
+    color: #155dfc;
+}
+
+.footer-credits {
+    color: var(--login-footer-gray);
+    font-size: 1.4rem;
+    text-align: center;
+}
