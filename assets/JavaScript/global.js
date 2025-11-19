@@ -1,24 +1,29 @@
-const templatesElements = document.querySelectorAll("[data-src]");
-for (let elements of templatesElements) {
-    const dataImport = elements.getAttribute("data-src");
-    fetch(dataImport)
-        .then((response) => {
-            if (!response.ok) {
-                throw "response not found"
-            }
-            return response.text()
-        })
-        .then(template => {
-            elements.innerHTML = template
-            loadTemplateScripts(elements)
-        })
-        .catch(() => {
-            elements.innerHTML = `<h4>template not found</h4>`;
+function renderComponents(elements) {
+    for (let element of elements) {
+        const dataImport = element.getAttribute("data-src");
 
-        });
-};
+        fetch(dataImport)
+            .then((response) => {
+                if (!response.ok) {
+                    throw "Not found"
+                }
+                return response.text();
+            })
+            .then((component) => {
+                element.innerHTML = component;
+                loadComponentScripts(element)
+                const subComponents = element.querySelectorAll("[data-src]");
+                renderComponents(subComponents)
+            })
+            .catch(() => {
+                element.innerHTML = `<h4>Component not found</h4>`;
+            });
+    }
+}
+const componentElements = document.querySelectorAll("[data-src]");
+renderComponents(componentElements)
 
-function loadTemplateScripts(element) {
+function loadComponentScripts(element) {
     const scripts = element.querySelectorAll("script");
     for (let script of scripts) {
         const newScript = document.createElement('script');
@@ -30,9 +35,6 @@ function loadTemplateScripts(element) {
         }
         script.remove()
 
-        document.body.appendChild(newScript)
+        element.appendChild(newScript)
     }
 }
-
-
-
