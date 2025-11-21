@@ -1,0 +1,22 @@
+body{
+    background: #f9fafb;
+}
+
+.dashboard-container{
+    display: flex;
+    gap: 3.2rem;
+    width: 100%;
+}
+
+.counter-card-container{
+    display: flex;
+    gap: 2.5rem;
+    width: 80%;
+
+}
+
+.sidebar-container{
+    width: 20%;
+    
+}
+
