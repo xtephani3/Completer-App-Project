@@ -3,4 +3,5 @@
     width: 25.5rem;
     background: var(--white-color);
     border: 0.1rem solid #e2e8f0;
+    position: fixed;
 }

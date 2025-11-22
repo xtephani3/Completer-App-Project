@@ -1,9 +1,13 @@
 const components = [
     {
-        name: "counter-card",
-        path: "/Components/dashboard/card.html"
+        name: "preview-card",
+        path: "/components/dashboard/cards/card.html"
     },
-    
+
+     {
+        name: "quick-action",
+        path: "/components/dashboard/cards/card.html"
+    },
 
 ];
 

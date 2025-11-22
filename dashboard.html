@@ -2,33 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Completer App</title>
-    <link rel="stylesheet" href="/assets/CSS/reset.css" />
-    <link rel="stylesheet" href="/assets/CSS/global.css" />
-    <link rel="stylesheet" href="/assets/CSS/dashboard.css"/>
-    <script src="/assets/JavaScript/global.js" defer></script>
-    <script src="/assets/JavaScript/components.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Completer App</title>
+  <link rel="stylesheet" href="/assets/CSS/reset.css" />
+  <link rel="stylesheet" href="/assets/CSS/global.css" />
+  <link rel="stylesheet" href="/assets/CSS/dashboard.css" />
+  <script src="/assets/JavaScript/global.js" defer></script>
+  <script src="/assets/JavaScript/components.js" defer></script>
 </head>
 
 <body>
-    <div class="dashboard-container">
-        <section class="sidebar-container">
-            <aside class="side-bar" data-src="/Templates/sidebar/sidebar.html"></aside>
-        </section>
-
-
-        <section class="counter-card-container">
-            <counter-card>
-                <span slot="card-text">hello</span>
-            </counter-card>
-
-            <counter-card></counter-card>
-            <counter-card></counter-card>
-            <counter-card></counter-card>
-        </section>
+  <div class="dashboard-container">
+    <div class="sidebar-container left">
+      <aside class="side-bar" data-src="/Templates/sidebar/sidebar.html"></aside>
     </div>
+
+    <div class="right">
+      <div class="dashboard-heading">
+        <h2>Good evening, </h2>
+        <p>Here's what's happening with your productivity today</p>
+      </div>
+      <div class="counter-card-container">
+
+        <preview-card>
+          <span slot="card-text">
+            <h4>Active Tasks</h4>
+          </span>
+          <div slot="card-icon">
+            <div class="preview-card_icon card-icon_checkmarkblue">
+              <img src="/assets/images/svg/checkmark-one.svg" />
+            </div>
+          </div>
+
+        </preview-card>
+        <preview-card> <span slot="card-text">
+            <h4>Total Expenses</h4>
+          </span>
+          <div slot="card-icon">
+            <div class="preview-card_icon card-icon_dollardarkgreen">
+              <img src="/assets/images/svg/dollarOne.svg" />
+            </div>
+          </div>
+        </preview-card>
+        <preview-card>
+          <span slot="card-text">
+            <h4>Total Notes</h4>
+          </span>
+          <div slot="card-icon">
+            <div class="preview-card_icon card-icon_noteslemon">
+              <img src="/assets/images/svg/noteIcon.svg" />
+            </div>
+          </div>
+        </preview-card>
+        <preview-card>
+          <span slot="card-text">
+            <h4>Completion Rate</h4>
+          </span>
+          <div slot="card-icon">
+            <div class="preview-card_icon card-icon_bentarrowblue">
+              <img src="/assets/images/svg/bentArrow.svg" />
+
+            </div>
+          </div>
+        </preview-card>
+      </div>
+
+      <div class="quick-actions-container">
+
+        <quick-action class="recent-tasks card2"> </quick-action>
+        <quick-action class="card2"> </quick-action>
+
+
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

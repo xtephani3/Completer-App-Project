@@ -1,0 +1,42 @@
+<template id="preview-card">
+    <style>
+        .preview-cards {
+            height: 17.5rem;
+            text-align: left;
+            border-radius: 1.2rem;
+            border: 1px solid var(--white-color);
+            background: var(--white-color);
+            outline-color: var(--preview-outline);
+           
+        }
+        .preview-card-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2.4rem;
+        }
+
+        
+    </style>
+
+    <div class="preview-cards">
+    <div class="preview-card-header">
+        <slot name="card-text"></slot>
+        <slot name="card-icon"></slot>
+    </div>
+    <div>
+
+</template>
+
+<template id="quick-action">
+    <style>
+        div {
+            height: 34.3rem;
+            border-radius: 1.2rem;
+            border: 1px solid var(--white-color);
+            background: var(--white-color);
+            outline-color: #3b82f6;
+        }
+    </style>
+    <div></div>
+</template>

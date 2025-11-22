@@ -17,6 +17,22 @@
     --animated-circle-blue: #2b7fff;
     --animated-circle-purple: #7c86ff;
     --footer-terms-gray: #6a7282;
+    --dollar-sign-green:#0092b8;
+    --dollar-sign-light-green:#cefafe;
+    --notes-icon-green:#00a63e;
+    --notes-icon-light-green:#dbfce7;
+    --bent-arrow-blue:#4f39f6;
+    --checkmark-background-lightblue:#dbeafe;
+    --checkmark-icon-dark-blue:#1b61fc;
+    --checkmark-gray:#d1d5dc;
+    --clock-icon-blue:#1e63fc;
+    --logout-text-red:#e7000b;
+    --sidebar-text-active-purple:#4f39f6;
+    --sidebar-text-black:#364153;
+    --dashboard-background:#f9fafb;
+    --countercard-text-gray:#4a5565;
+    --dashboard-black:#1e293b;
+    --preview-outline:#3b82f6;
 }
 
 @keyframes blink {
