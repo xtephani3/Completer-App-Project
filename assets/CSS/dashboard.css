@@ -37,7 +37,7 @@
 
 .preview-card_icon {
 
-    width: 3.2em;
+    width: 3.2rem;
     height: 3.2rem;
     border-radius: 0.8rem;
     border: 1px solid var(--white-color);
@@ -45,6 +45,11 @@
     align-items: center;
     justify-content: center;
 
+}
+
+.card-counter {
+    font-weight: 700;
+    font-size: 2.4rem;
 }
 
 .card-icon_checkmarkblue {
@@ -63,4 +68,16 @@
 
 .card-icon_bentarrowblue {
     background: var(--bent-arrow-blue);
+}
+
+.quick-action-button-icon-wrap {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: pink;
+
 }

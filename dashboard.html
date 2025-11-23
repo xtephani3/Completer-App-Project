@@ -15,7 +15,7 @@
 <body>
   <div class="dashboard-container">
     <div class="sidebar-container left">
-      <aside class="side-bar" data-src="/Templates/sidebar/sidebar.html"></aside>
+      <div class="side-bar" data-src="/Templates/sidebar/sidebar.html"></div>
     </div>
 
     <div class="right">
@@ -24,7 +24,6 @@
         <p>Here's what's happening with your productivity today</p>
       </div>
       <div class="counter-card-container">
-
         <preview-card>
           <span slot="card-text">
             <h4>Active Tasks</h4>
@@ -34,7 +33,14 @@
               <img src="/assets/images/svg/checkmark-one.svg" />
             </div>
           </div>
+          <span slot="card-counter">
+            <h3 class="card-counter"> 00</h3>
+          </span>
 
+          <span slot="card-counter-text">
+            <p>0 completed</p>
+
+          </span>
         </preview-card>
         <preview-card> <span slot="card-text">
             <h4>Total Expenses</h4>
@@ -44,7 +50,16 @@
               <img src="/assets/images/svg/dollarOne.svg" />
             </div>
           </div>
+           <span slot="card-counter">
+            <h3 class="card-counter">$0.00</h3>
+          </span>
+
+          <span slot="card-counter-text">
+            <p>This period</p>
+
+          </span>
         </preview-card>
+
         <preview-card>
           <span slot="card-text">
             <h4>Total Notes</h4>
@@ -54,7 +69,16 @@
               <img src="/assets/images/svg/noteIcon.svg" />
             </div>
           </div>
+           <span slot="card-counter">
+            <h3 class="card-counter">0</h3>
+          </span>
+
+          <span slot="card-counter-text">
+            <p>Saved notes</p>
+
+          </span>
         </preview-card>
+
         <preview-card>
           <span slot="card-text">
             <h4>Completion Rate</h4>
@@ -65,13 +89,81 @@
 
             </div>
           </div>
+           <span slot="card-counter">
+            <h3 class="card-counter">0%</h3>
+          </span>
+
+          <span slot="card-counter-text">
+            <p>Task completion</p>
+
+          </span>
         </preview-card>
       </div>
 
       <div class="quick-actions-container">
 
-        <quick-action class="recent-tasks card2"> </quick-action>
-        <quick-action class="card2"> </quick-action>
+        <dashboard-actions class="recent-tasks card2"> 
+          <div slot="dashboard-action-icon">
+            <img src="/assets/images/svg/clock.svg">
+          </div>
+          <span slot="dashboard-action-heading">
+            <h4> Recent Tasks</h4>
+          </span>
+        </dashboard-actions>
+
+        <dashboard-actions class="card2"> 
+          <div slot="dashboard-action-icon">
+            <img src="/assets/images/svg/bentArrowTwo.svg"/>
+          </div>
+          <span slot="dashboard-action-heading">
+            <h4> Quick Actions</h4>
+          </span>
+
+          <div slot="dashboard-actions-button">
+            <quick-action-button> 
+              <div slot="quick-action-button-icon">
+                <div class="quick-action-button-icon-wrap ">
+                <img src="/assets/images/svg/checkmarkFour.svg"/>
+                </div>
+              </div>
+              <span slot="quick-action-button-text">
+                <p>Create New Task</p>
+              </span>
+              <span slot="quick-action-button-span">
+                <span>Add a task to your</span>
+              </span>
+            </quick-action-button>
+
+             <quick-action-button> 
+              <div slot="quick-action-button-icon">
+                <div class="quick-action-button-icon-wrap ">
+                <img src="/assets/images/svg/dollarThree.svg"/>
+                </div>
+              </div>
+              <span slot="quick-action-button-text">
+                <p>Track Expense</p>
+              </span>
+              <span slot="quick-action-button-span">
+                <span>Record a new track expense</span>
+              </span>
+            </quick-action-button>
+
+          <quick-action-button> 
+              <div slot="quick-action-button-icon">
+                <div class="quick-action-button-icon-wrap ">
+                <img src="/assets/images/svg/noteIconThree.svg"/>
+                </div>
+              </div>
+              <span slot="quick-action-button-text">
+                <p>Write Note</p>
+              </span>
+              <span slot="quick-action-button-span">
+                <span>Capture your thoughts</span>
+              </span>
+            </quick-action-button>
+            </div>
+        
+        </dashboard-actions>
 
 
       </div>

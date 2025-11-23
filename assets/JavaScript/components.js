@@ -5,9 +5,15 @@ const components = [
     },
 
      {
-        name: "quick-action",
+        name: "dashboard-actions",
         path: "/components/dashboard/cards/card.html"
     },
+
+     {
+        name: "quick-action-button",
+        path: "/components/dashboard/cards/card.html"
+    },
+
 
 ];
 

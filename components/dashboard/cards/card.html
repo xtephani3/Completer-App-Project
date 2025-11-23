@@ -7,36 +7,96 @@
             border: 1px solid var(--white-color);
             background: var(--white-color);
             outline-color: var(--preview-outline);
-           
+
         }
-        .preview-card-header{
+
+        .preview-card-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 2.4rem;
         }
 
-        
+        .preview-card-counter {
+            display: flex;
+            flex-direction: column;
+            padding: 2.4rem;
+        }
     </style>
 
     <div class="preview-cards">
-    <div class="preview-card-header">
-        <slot name="card-text"></slot>
-        <slot name="card-icon"></slot>
-    </div>
-    <div>
-
+        <div class="preview-card-header">
+            <slot name="card-text"></slot>
+            <slot name="card-icon"></slot>
+        </div>
+        <div class="preview-card-counter">
+            <slot name="card-counter"></slot>
+            <slot name="card-counter-text"></slot>
+        </div>
+        <div>
 </template>
 
-<template id="quick-action">
+
+<template id="dashboard-actions">
     <style>
-        div {
+        .dashboard-action-container {
             height: 34.3rem;
             border-radius: 1.2rem;
-            border: 1px solid var(--white-color);
+            border: 0.7px solid var(--white-color);
             background: var(--white-color);
-            outline-color: #3b82f6;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            font-size: 1.6rem;
+            font-weight: 400;
+
+        }
+
+        .dashboard-action-heading-wrap {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+             padding: 2.4rem 2.4rem 0 2.4rem;
+        }
+        
+    </style>
+    <div class="dashboard-action-container">
+        <div class="dashboard-action-heading-wrap">
+            <slot name="dashboard-action-icon"></slot>
+            <slot name="dashboard-action-heading"></slot>
+        </div>
+
+        <slot name="dashboard-actions-button"></slot>
+    </div>
+</template>
+
+<template id="quick-action-button">
+    <style>
+        button {
+            height: 7.3rem;
+            width: 41.1rem;
+            border-radius: 0.6rem;
+            border: 1px solid #e2e8f0;
+            background: #f8f9fa;
+            padding: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+    
+        }
+
+        .quick-action-button-text-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
         }
     </style>
-    <div></div>
+    <button>
+        <slot name="quick-action-button-icon"></slot>
+        <div class="quick-action-button-text-wrap">
+            <slot name="quick-action-button-text"></slot>
+            <slot name="quick-action-button-span"></slot>
+        </div>
+    </button>
 </template>
