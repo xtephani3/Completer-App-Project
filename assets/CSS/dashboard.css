@@ -1,29 +1,47 @@
 .dashboard-container {
     display: flex;
     background: var(--dashboard-background);
+    height: 100vh;
+
 }
 
-.left {
-    background: green;
+.dashboard-left {
     width: 20%;
-    height: 58.5rem;
+    height: 100%;
+    transition: width 0.4s;
 
 }
 
-.right {
+.dashboard-right {
     width: 80%;
-    height: 64.7rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 3.3rem;
-    padding: 3.2rem
+    padding: 3.2rem;
+    transition: width 0.4s;
+    overflow-y: scroll;
 }
+
+
+.dashboard-heading h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.dashboard-heading p {
+    font-size: 1.6rem;
+    color: #6a7282;
+}
+
 
 .counter-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
 }
+
+
 
 .quick-actions-container {
     display: flex;
@@ -52,6 +70,17 @@
     font-size: 2.4rem;
 }
 
+.counter-card-heading {
+    color: #4a5565;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.counter-card-summary {
+    color: #6a7282;
+    font-size: 1.2rem;
+}
+
 .card-icon_checkmarkblue {
     background: var(--checkmark-blue);
 
@@ -78,6 +107,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: pink;
 
+}
+
+.quick-action-button-heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.quick-action-button-description {
+    font-size: 1.2rem;
+    color: #6a7282;
+    font-weight: 500;
+
+}
+
+.icon-checkmark-blue {
+    background: var(--checkmark-background-lightblue);
+}
+
+.icon-dollar-green {
+    background: var(--dollar-sign-light-green);
+}
+
+.icon-note-green {
+    background: var(--notes-icon-light-green);
+}
+
+.recent-tasks-checkmark-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 2.5rem;
+}
+
+.recent-tasks-checkmark-wrap p {
+    color: #707887;
+    font-size: 1.4rem;
 }

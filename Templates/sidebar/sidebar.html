@@ -1,48 +1,60 @@
 <link rel="stylesheet" href="/Templates/sidebar/sidebar.css" />
-<script src="/Templates/sidebar/sidebar.js"></script>
+<script src="/Templates/sidebar/sidebar.js" defer></script>
 
 <div class="side-bar-wrap">
     <div class="sidebar-header-wrap">
-        <div class="sidebar-header-icon-wrap">
-            <img src="/assets/images/svg/checkmarkThree.svg" />
+        <div class="sidebar-header-container">
+            <div class="sidebar-header-icon-wrap">
+                <img src="/assets/images/svg/checkmarkThree.svg" />
+            </div>
+            <h1 class="sidebar-heading">TaskMaster</h1>
         </div>
-        <h1>TaskMaster</h1>
-        <img src="/assets/images/svg/angleLeft.svg" />
+        <img onclick="toggleDashboardSidebar()" src="/assets/images/svg/angleLeft.svg" />
     </div>
 
     <div class="user-details-wrap">
-        <div class="user-name-icon">
+        <div class="user-name-icon-wrap">
+            <h1 class="user-name-icon">X</h1>
 
         </div>
         <div class="user-details">
-            <p> Stephanie Amaka</p>
-            <p>useremail@gmail.com</p>
+            <p class="sidebar-user-name"> Xteph Arhnie</p>
+            <p class="sidebar-user-email">xtephanie@gmail.com</p>
         </div>
     </div>
     <div class="sidebar-navigation">
         <button class="sidebar-nav-button">
-            <img src="/assets/images/svg/squareRectangleOne.svg" />
-            Dashboard</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="#364153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-layout-dashboard h-5 w-5 flex-shrink-0" aria-hidden="true">
+                <rect width="7" height="9" x="3" y="3" rx="1" />
+                <rect width="7" height="5" x="14" y="3" rx="1" />
+                <rect width="7" height="9" x="14" y="12" rx="1" />
+                <rect width="7" height="5" x="3" y="16" rx="1" />
+            </svg>
+            <span>Dashboard</span></button>
         <button class="sidebar-nav-button">
             <img src="/assets/images/svg/checkmarkTwo.svg" />
-            Tasks</button>
+            <span>Tasks</span></button>
         <button class="sidebar-nav-button">
             <img src="/assets/images/svg/userIconDoubleOne.svg" />
-            Community</button>
+            <span>Community</span></button>
         <button class="sidebar-nav-button">
             <img src="/assets/images/svg/dollarTwo.svg" />
-            Expenses</button>
+            <span>Expenses</span></button>
         <button class="sidebar-nav-button">
             <img src="/assets/images/svg/noteIconTwo.svg" />
-            Notes</button>
+            <span>Notes</span></button>
         <button class="sidebar-nav-button">
             <img src="/assets/images/svg/setting.svg" />
-            Settings</button>
+            <span> Settings</span></button>
 
     </div>
     <div class="sidebar-footer">
-        <img src="/assets/images/svg/arrowRight.svg" />
-        <button class="sidebar-footer-button">Logout</button>
+        <button class="sidebar-footer-button">
+            <img src="/assets/images/svg/arrowRight.svg" />
+            <span>Logout</span></button>
+
 
     </div>
 
