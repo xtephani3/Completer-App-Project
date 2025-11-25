@@ -51,5 +51,4 @@ const loadAllComponents = async () => {
 
 
 loadAllComponents()
-    .finally(() => {
-    })
+    
