@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="/Templates/Login/login.css" />
 <script src="/Templates/Login/login.js" defer></script>
-
-<form action="./dashboard.html"class="verification-form login-form-main">
+<form id="login-page-form" class="verification-form login-form-main">
     <div class="checkmark-icon-container">
         <img src="/assets/images/svg/checkmark.svg" />
         <div class="checkmark-tiny-circle"></div>
@@ -20,13 +19,13 @@
 
         <div class="input-wrap">
             <label>Email Address*</label>
-            <input class="verification-input" type="email" placeholder="hello@example.com" required />
+            <input id="user-login-email" class="verification-input" type="email" placeholder="hello@example.com" required />
             <img class="message-icon" src="/assets/images/svg/messageicon.svg" />
         </div>
 
-        <div class="input-wrap">
+        <div id="" class="input-wrap">
             <label>Password*</label>
-            <input class="verification-input" type="password" placeholder="••••••••" required />
+            <input id="user-login-password" class="verification-input" type="password" placeholder="••••••••" required />
             <img class="padlock-icon" src="/assets/images/svg/padlock.svg" />
         </div>
     </div>

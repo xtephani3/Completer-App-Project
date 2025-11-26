@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/Templates/signup/signup.css" />
-<script src="/Templates/signup/signup.js" defer></script>
-<form class="authentication-form signup-form-main">
+<script src="/Templates/signup/signup.js" defer></script>.
+ <script src="/assets/JavaScript/verification.js" defer></script>
+<form id="signup-page-form" class="authentication-form signup-form-main">
     <div class="checkmark-icon-container">
         <img src="/assets/images/svg/checkmark.svg" />
         <div class="checkmark-yellow-circle"></div>
@@ -18,17 +19,17 @@
     <div class="signup-input-container">
         <div class="signup-input-wrap">
             <label>Full Name*</label>
-            <input class="signup-verification-input " type="text" placeholder="Xteph Arhnie" required />
+            <input id="user-full-name" class="signup-verification-input " type="text" placeholder="Xteph Arhnie" required />
             <img class="signup-user-icon" src="/assets/images/svg/usericon.svg" />
         </div>
         <div class="signup-input-wrap">
             <label>Email Address*</label>
-            <input class="signup-verification-input " type="email" placeholder="hello@example.com" required />
+            <input id="user-email" class="signup-verification-input " type="email" placeholder="hello@example.com" required />
             <img class="signup-message-icon" src="/assets/images/svg/messageicon.svg" />
         </div>
         <div class="signup-input-wrap">
             <label>Password*</label>
-            <input class="signup-verification-input" type="password" placeholder="••••••••" required />
+            <input id="user-password" class="signup-verification-input" type="password" placeholder="••••••••" required />
             <img class="padlock-icon" src="/assets/images/svg/padlock.svg" />
             <span>Password must be at least 6 characters long</span>
         </div>
@@ -36,7 +37,7 @@
     <div class="signup-next-steps-container">
         <button class="signup-next-steps">Help?</button>
         <img class="signup-questionmark" src="/assets/images/svg/questionmark.svg" />
-        <button class="signup-next-steps signup-yellow-button">Create Account</button>
+        <button type="submit" class="signup-next-steps signup-yellow-button">Create Account</button>
     </div>
     <footer>
         <p class="signup-agreement-footer">By continuing, you agree to our
@@ -47,3 +48,4 @@
         <p class="signup-footer-credits">2024 TaskMaster | Made for university students</p>
     </footer>
 </form>
+
