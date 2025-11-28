@@ -1,0 +1,36 @@
+<template id="quick-action-button">
+    <style>
+        button {
+            height: 7.3rem;
+            width: 100%;
+            border-radius: 0.6rem;
+            border: 1px solid #e2e8f0;
+            background: #f8f9fa;
+            padding: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            font-family: var(--font-family);
+
+
+        }
+
+        button:hover {
+            background: #06b5d4e1;
+        }
+
+        .quick-action-button-text-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+    </style>
+    <button>
+        <slot name="quick-action-button-icon"></slot>
+        <div class="quick-action-button-text-wrap">
+            <slot name="quick-action-button-text"></slot>
+            <slot name="quick-action-button-span"></slot>
+        </div>
+    </button>
+</template>

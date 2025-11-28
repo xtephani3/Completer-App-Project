@@ -82,39 +82,25 @@
     </div>
 </template>
 
-<template id="quick-action-button">
+
+<template id="data-cards">
     <style>
-        button {
-            height: 7.3rem;
+        .data-card{
             width: 100%;
-            border-radius: 0.6rem;
-            border: 1px solid #e2e8f0;
-            background: #f8f9fa;
-            padding: 1.6rem;
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-            margin-bottom: 1.2rem;
-            font-family: var(--font-family);
-
-
+            height: 48rem;
+            background: var(--white-color);
+            box-shadow: var(--card-box-shadow);
         }
 
-        button:hover {
-            background: #06b5d4e1;
-        }
-
-        .quick-action-button-text-wrap {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
+        .data-card_header-wrap{
+            width: 100%;
+            height: 9.7rem;
+            background: #fbf9fa;
         }
     </style>
-    <button>
-        <slot name="quick-action-button-icon"></slot>
-        <div class="quick-action-button-text-wrap">
-            <slot name="quick-action-button-text"></slot>
-            <slot name="quick-action-button-span"></slot>
-        </div>
-    </button>
+
+<div class="data-card">
+    <div class="data-card_header-wrap"></div>
+
+</div>
 </template>

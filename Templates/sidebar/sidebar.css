@@ -100,6 +100,7 @@
     margin-bottom: 0.4rem;
     transition: all 0.15s cubic-bezier(.4, 0, .2, 1);
     font-family: var(--font-family);
+    text-decoration: none;
 
 }
 
@@ -145,7 +146,8 @@
     gap:1.2rem;
     font-family: var(--font-family);
     font-weight: 500;
-    font-family: 1.4rem;
+    font-size: 1.4rem;
+    text-decoration: none;
 }
 
 .sidebar-footer-button:hover{
@@ -155,40 +157,40 @@
     width: 100%;
 }
 
-.dashboard-container--sidebar-closed .dashboard-left {
+.toggle-container--sidebar-closed .completer-app-left {
     width: 6%;
 }
 
-.dashboard-container--sidebar-closed .dashboard-left .sidebar-header-wrap {
+.toggle-container--sidebar-closed .completer-app-left .sidebar-header-wrap {
     display: flex;
     justify-content: center;
     transform: rotate(180deg);
 }
 
 
-.dashboard-container--sidebar-closed .dashboard-left .sidebar-header-wrap .sidebar-header-icon-wrap,
-.dashboard-container--sidebar-closed .dashboard-left .sidebar-header-wrap h1 {
+.toggle-container--sidebar-closed .completer-app-left .sidebar-header-wrap .sidebar-header-icon-wrap,
+.toggle-container--sidebar-closed .completer-app-left .sidebar-header-wrap h1 {
     display: none;
 }
 
-.dashboard-container--sidebar-closed .dashboard-left .sidebar-nav-button span {
+.toggle-container--sidebar-closed .completer-app-left .sidebar-nav-button span {
     display: none;
 }
 
-.dashboard-container--sidebar-closed .dashboard-left .user-details-wrap .user-details {
+.toggle-container--sidebar-closed .completer-app-left .user-details-wrap .user-details {
     display: none;
 }
 
-.dashboard-container--sidebar-closed .dashboard-left .sidebar-footer {
+.toggle-container--sidebar-closed .completer-app-left .sidebar-footer {
     display: flex;
     justify-content: center;
     padding: 1.6rem;
 }
 
-.dashboard-container--sidebar-closed .dashboard-left .sidebar-footer .sidebar-footer-button span {
+.toggle-container--sidebar-closed .completer-app-left .sidebar-footer .sidebar-footer-button span {
     display: none;
 }
 
-.dashboard-container--sidebar-closed .dashboard-right {
+.toggle-container--sidebar-closed .completer-app-right {
     width: 94%;
 }

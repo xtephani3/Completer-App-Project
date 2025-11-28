@@ -10,7 +10,7 @@ body {
 .verification-form {
     z-index: 1;
     position: relative;
-    height: 61.8rem;
+    height: 61.2rem;
     width: 44.8rem;
     background: white;
     box-shadow: 0 2.5rem 5rem -1.2rem rgba(0, 0, 0, 0.25);
@@ -188,8 +188,14 @@ body {
     color: #155dfc;
 }
 
+
+.footer-credits-wrap{
+    padding: 1.6rem;
+}
+
 .footer-credits {
-    color: var(--login-footer-gray);
+    color:#6a7282;
     font-size: 1.4rem;
     text-align: center;
+    
 }

@@ -29,11 +29,12 @@
     --logout-text-red:#e7000b;
     --sidebar-text-active-purple:#4f39f6;
     --sidebar-text-gray:#364153;
-    --dashboard-background:#f9fafb;
+    --body-background:#f9fafb;
     --countercard-text-gray:#4a5565;
     --dashboard-black:#1e293b;
     --preview-outline:#3b82f6;
     --sidebar-black:#101828;
+    --card-box-shadow:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
     --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }

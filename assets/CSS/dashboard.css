@@ -1,19 +1,19 @@
 .dashboard-container {
     display: flex;
-    background: var(--dashboard-background);
+    background: var(--body-background);
     height: 100vh;
 
 }
 
 .dashboard-left {
-    width: 20%;
+    width: 18%;
     height: 100%;
     transition: width 0.4s;
 
 }
 
 .dashboard-right {
-    width: 80%;
+    width: 82%;
     height: 100%;
     display: flex;
     flex-direction: column;

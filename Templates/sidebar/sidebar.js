@@ -1,5 +1,5 @@
 function toggleDashboardSidebar() {
-    document.querySelector(".dashboard-container").classList.toggle("dashboard-container--sidebar-closed");
+    document.querySelector(".completer-app-wrap").classList.toggle("toggle-container--sidebar-closed");
 }
 
 
