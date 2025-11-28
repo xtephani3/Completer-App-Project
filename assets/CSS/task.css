@@ -22,3 +22,28 @@
     transition: width 0.4s;
     overflow-y: scroll;
 }
+
+.taskbar-data-card_icon{
+    background: var(--checkmark-blue);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskbar-data-card_heading{
+    font-size: 1.8rem;
+    color: #1e293b;
+    font-weight: 600;
+
+}
+
+.taskbar-data-card_description{
+    font-size: 1.4rem;
+    color: #6a7282;
+
+}
+

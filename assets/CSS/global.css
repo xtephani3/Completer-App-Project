@@ -1,5 +1,6 @@
 :root {
     font-size: 10px;
+    box-sizing: border-box;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --white-color: #fff;
     --checkmark-blue: #404af9;
@@ -61,3 +62,4 @@
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
 }
+
