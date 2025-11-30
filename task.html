@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/CSS/task.css" />
     <script src="/assets/JavaScript/global.js" defer></script>
     <script src="/assets/JavaScript/components.js" defer></script>
+    <script src="/assets/JavaScript/task.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         </div>
 
         <div class="taskbar-right completer-app-right">
-            <data-cards>
+            <data-card>
                 <div slot="data-card_head">
                     <data-card-header>
                         <div slot="data-card_icon" class="taskbar-data-card_icon">
@@ -53,7 +54,7 @@
                     </div>
                     </div>
 
-                    <button class="taskbar-add-task_button">
+                    <button onclick="displayCreateTaskForm()" id="add-task-button" class="taskbar-add-task_button">
                         <img src="/assets/images/svg/plusIcon.svg"/>
                         Add Task</button>
                 </div>
@@ -64,10 +65,49 @@
                     <p class="tasks-display-description2" >Click "Add Task" to create your first task</p>
                 </div>
 
+                <form id="create-task-form" class="create-task-form">
+                    <h2 class="create-task-form_header">
+                        <img src="/assets/images/svg/aiIconOne.svg"/>
+                        Create new task</h2>
+                        <p class="create-task-form_description">Add a new task to your productivity list</p>
+                        <label class="create-task-form_text-input-label">Title</label>
+                        <div class="create-task-form-input-button-wrap">
+                        <input class=" create-task-form_input--focus create-task-form_input" type="text" placeholder="Enter task title"/>
+                        <button class="create-task-form-ai-button">
+                            <img src="/assets/images/svg/aiIconTwo.svg"/>
+                        </button>
+                        </div>
+                        <label class="create-task-form_text-input-label">Description</label>
+                        <div>
+                        <textarea class="create-task-form_input--focus create-task-form_textarea" placeholder="Add task details..."></textarea>
+                        </div>
+                        <div class="create-task-form_options-wrap">
+                            <div class="create-task-form_priority-wrap">
+                            <label class="create-task-form_priority-label">Priority</label>
+                            <select class="create-task-form_priority-input">
+                                <option>Low</option>
+                                <option selected>Medium</option>
+                                <option>High</option>
+                            </select>
+                            </div>
+                            <div>
+                                <label class="create-task-form_priority-label">Due date</label>
+                                <div>
+                                <input class="create-task-form_priority-input" type="date"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="create-task-form_button-wrap">
+                                <button class="create-task-form_cancel-button">Cancel</button>
+                                <button class="create-task-form_create-task-button">Create Task</button>
+                            </div>
+
+                </form>
+
                 </div>
 
                
-            </data-cards>
+            </data-card>
 
         </div>
 </body>

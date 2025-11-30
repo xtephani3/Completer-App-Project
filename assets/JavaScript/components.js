@@ -15,7 +15,7 @@ const components = [
     },
 
     {
-        name: "data-cards",
+        name: "data-card",
         path: "/components/cards/card.html"
     },
 
