@@ -19,6 +19,11 @@ const components = [
         path: "/components/cards/card.html"
     },
 
+    {
+        name: "data-card-header",
+        path: "/components/cards/card.html"
+    },
+
 
 
 ];

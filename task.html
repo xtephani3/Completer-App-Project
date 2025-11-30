@@ -20,20 +20,56 @@
 
         <div class="taskbar-right completer-app-right">
             <data-cards>
-                <div slot="data-card_icon" class="taskbar-data-card_icon">
-                    <img src="/assets/images/svg/checkmarkSix.svg"/>
+                <div slot="data-card_head">
+                    <data-card-header>
+                        <div slot="data-card_icon" class="taskbar-data-card_icon">
+                            <img src="/assets/images/svg/checkmarkSix.svg" />
+                        </div>
+                        <div slot="data-card_header" class="taskbar-data-card_header">
+                            <h2 class="taskbar-data-card_heading">Task Management</h2>
+                            <p class="taskbar-data-card_description">Manage and track your tasks</p>
+                        </div>
+                    </data-card-header>
                 </div>
-                <div slot="data-card_header" class="taskbar-data-card_header">
-                    <h2 class="taskbar-data-card_heading">Task Management</h2>
-                    <p class="taskbar-data-card_description">Manage and track your tasks</p>
+
+                <div slot="data-card_items" class="data-card_items">
+                    <div class="task-data-card_button-wrap">
+                        <button class="taskbar-data-card_button">
+                            <img src="/assets/images/svg/circleCheckmark.svg" />
+                            My Tasks</button>
+                        <button class="taskbar-data-card_button">
+                            <img src="/assets/images/svg/analyticsIcon.svg" />
+                            AI Summary</button>
+                    </div>
+                     <div class="taskbar-add-task-section">
+                        <div class="taskbar-counter-wrap">
+                    <div class="taskbar-counter">
+                        <span class="task-counter active-tasks-counter">0</span>
+                        <p class="taskbar-counter_description">Active tasks</p>
+                    </div>
+                    <div class="taskbar-counter">
+                        <span class="task-counter task-counter--completed">0</span>
+                        <p class="taskbar-counter_description">Completed</p>
+                    </div>
+                    </div>
+
+                    <button class="taskbar-add-task_button">
+                        <img src="/assets/images/svg/plusIcon.svg"/>
+                        Add Task</button>
                 </div>
+
+                <div class="tasks-display-default">
+                    <img src="/assets/images/svg/taskDefaultCircle.svg"/>
+                    <p class="tasks-display-description1">No tasks yet</p>
+                    <p class="tasks-display-description2" >Click "Add Task" to create your first task</p>
+                </div>
+
+                </div>
+
+               
             </data-cards>
-            
 
         </div>
-
-
-    </div>
 </body>
 
 </html>

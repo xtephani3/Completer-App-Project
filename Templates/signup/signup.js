@@ -27,24 +27,17 @@ signupPageForm.addEventListener("submit", (e) => {
 
 
 function signupUser(fullname, email, password) {
-    //get the database value
     const database = getDatabase(USERS_DB_NAME, []);
      if (fullname.length < 3) {
         throw Error("Full name must be at least 3 characters long")
-    
     }
 
-
-    //update with the new user info
     database.push({
         fullname,
         email,
         password
     });
 
-    
-
-//update the database
     updateDatabase(USERS_DB_NAME, database);
 
     return true;
@@ -53,11 +46,14 @@ function signupUser(fullname, email, password) {
 
 
 function showSignupError(message) {
+    signupErrorElement.style.display = "block";
     signupErrorElement.innerText = message;
 }
 
 
 function clearSignupError() {
+     signupErrorElement.style.display = "none";
     signupErrorElement.innerText = "";
+
 }
 

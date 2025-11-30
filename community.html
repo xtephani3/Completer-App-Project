@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="/assets/JavaScript/global.js" defer></script>
     <script src="/assets/JavaScript/components.js" defer></script>
 </head>
+
 <body>
     <div class="community-container completer-app-wrap">
         <div class="sidebar-container completer-app-left community-left">
@@ -18,19 +20,38 @@
 
         <div class="community-right completer-app-right">
             <data-cards>
-                 <div slot="data-card_icon" class="community-data-card_icon">
-                    <img src="/assets/images/svg/userDoubleIconTwo.svg"/>
+                <div slot="data-card_head">
+                    <data-card-header>
+                        <div slot="data-card_icon" class="community-data-card_icon">
+                            <img src="/assets/images/svg/userDoubleIconTwo.svg" />
+                        </div>
+                        <div slot="data-card_header" class="community-data-card_header">
+                            <h2 class="community-data-card_heading">community Board</h2>
+                            <p class="community-data-card_description">Collaborate with your team</p>
+                        </div>
+                    </data-card-header>
                 </div>
-                <div slot="data-card_header" class="community-data-card_header">
-                    <h2 class="community-data-card_heading">community Board</h2>
-                    <p class="community-data-card_description">Collaborate with your team</p>
+
+                <div slot="data-card_items" class="data-card_items">
+                    <div class="community-input-wrap">
+                        <div class="community-input-icon-wrap"></div>
+                        <textarea rows="3"
+                            placeholder="Share an update, ask for help, or celebrate a win... (Mention @comsq to get AI help)"
+                            class="community-input"></textarea>
+                    </div>
+                    <div class="community-post-button-wrap">
+                    <button class="community-post-button">
+                        <img src="/assets/images/svg/postArrowIcon.svg"/>
+                         post</button>
+                    </div>
                 </div>
             </data-cards>
-            
+
 
         </div>
 
 
     </div>
 </body>
+
 </html>

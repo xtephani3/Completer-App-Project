@@ -45,30 +45,22 @@ const LOGIN_DB_NAME = "auth-app-db";
 
 
 function getDatabase(databaseName, defaultValue) {
-    //get the database value 
     const storage = localStorage.getItem(databaseName);
-
-    //check if the database value is existent we return the value
     if (storage !== null) {
         return JSON.parse(storage)
     } else {
-        //if the database value is non existent we set a default value and recall the function to recheck
         localStorage.setItem(databaseName, JSON.stringify(defaultValue));
         getDatabase(databaseName, defaultValue);
     }
-
-    //return  the default value by default
     return defaultValue
 }
 
 function updateDatabase(databaseName, newData) {
-    //update the database value in object
     localStorage.setItem(databaseName, JSON.stringify(newData));
 }
 
 
 function getLoggedInUser() {
-    //get the current logged in user session
     const database = getDatabase(LOGIN_DB_NAME);
 
     return database;
