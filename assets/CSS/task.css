@@ -171,8 +171,8 @@
     gap: 8px;
     border: 0.7px solid #e2e8f0;
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 18%;
+    left: 31%;
     display: none;
 
 }
@@ -303,4 +303,31 @@
 .create-task-form_input--focus:focus {
     border: 0.1rem solid #6366f1;
     outline: 0.3rem solid #3b83f697;
+}
+
+.create-task-form-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    backdrop-filter: blur(0.2px);
+    
+}
+
+.blur-form-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display:none;
+    background: #00000077;
+}
+
+.create-task-form-close-x-container{
+    display: flex;
+    justify-content: flex-end;
+
 }

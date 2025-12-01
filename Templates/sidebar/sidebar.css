@@ -182,7 +182,7 @@
     display: none;
 }
 
-.toggle-container--sidebar-closed .completer-app-left .sidebar-nav-button span {
+.toggle-container--sidebar-closed .completer-app-left .sidebar-nav-button .sidebar-nav-button-text {
     display: none;
 }
 
@@ -196,7 +196,7 @@
     padding: 1.6rem;
 }
 
-.toggle-container--sidebar-closed .completer-app-left .sidebar-footer .sidebar-footer-button span {
+.toggle-container--sidebar-closed .completer-app-left .sidebar-footer .Logout-buttton{
     display: none;
 }
 
