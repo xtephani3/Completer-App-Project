@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Completer App</title>
     <link rel="stylesheet" href="/assets/CSS/reset.css" />
     <link rel="stylesheet" href="/assets/CSS/global.css" />
     <link rel="stylesheet" href="/assets/CSS/community.css" />
     <script src="/assets/JavaScript/global.js" defer></script>
     <script src="/assets/JavaScript/components.js" defer></script>
+    <script src="/assets/JavaScript/community.js" defer></script>
 </head>
 
 <body>
@@ -34,24 +35,22 @@
 
                 <div slot="data-card_items" class="data-card_items">
                     <div class="community-input-wrap">
-                        <div class="community-input-icon-wrap"></div>
-                        <textarea rows="3"
+                        <div id="community-input-icon-wrap" class="community-input-icon-wrap"></div>
+                        <textarea rows="3" id="community-input"
                             placeholder="Share an update, ask for help, or celebrate a win... (Mention @comsq to get AI help)"
                             class="community-input"></textarea>
                     </div>
                     <div class="community-post-button-wrap">
-                    <button class="community-post-button">
+                    <button id="community-post-button" class="community-post-button">
                         <img src="/assets/images/svg/postArrowIcon.svg"/>
                          post</button>
                     </div>
+
+                    <div id="community-comment-items" class="community-comment-items"> 
+            </div>
                 </div>
             </data-card>
-
-
         </div>
-
-
     </div>
 </body>
-
 </html>

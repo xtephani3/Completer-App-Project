@@ -38,18 +38,21 @@
     font-size: 1.8rem;
     color: #1e293b;
     font-weight: 600;
+    font-family: var(--font-family);
 
 }
 
 .community-data-card_description {
     font-size: 1.4rem;
     color: #6a7282;
+    font-family: var(--font-family);
 
 }
 
 .data-card_items {
     padding: 2.4rem;
     box-sizing: border-box;
+    
 }
 
 .community-input-wrap {
@@ -73,9 +76,10 @@
     justify-content: center;
     color: var(--white-color);
     box-sizing: border-box;
+    font-size: 16px;
 }
 
-.community-input{
+.community-input {
     border: 0.7px solid var(--white-color);
     box-sizing: border-box;
     width: 100%;
@@ -87,18 +91,19 @@
 }
 
 
-.community-input:focus{
-     border: 0.1rem solid #6366f1;
+.community-input:focus {
+    border: 0.1rem solid #6366f1;
     outline: 0.3rem solid #3b83f697;
 }
-.community-post-button-wrap{
+
+.community-post-button-wrap {
     display: flex;
     justify-content: flex-end;
     margin-top: 0.8rem;
 
 }
 
-.community-post-button{
+.community-post-button {
     background: #3b82f6;
     border: none;
     border-radius: 0.6rem;
@@ -110,4 +115,60 @@
     height: 3.2rem;
     color: var(--white-color);
     gap: 0.6rem;
+    font-family: var(--font-family);
+}
+
+
+.community-comment-items {
+    margin-top: 10px;
+}
+
+
+.community-comment-item {
+    padding: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    align-items: start;
+    gap: 1rem;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+}
+
+.community-comment-item-icon {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ffffff;
+    background: linear-gradient(to right bottom in oklab, rgb(43, 127, 255) 0%, rgb(173, 70, 255) 100%);
+    border-radius: 100%;
+    
+}
+
+.community-comment-item:hover {
+    box-shadow: var(--card-box-shadow);
+}
+
+.community-comment-item-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    gap: 1rem;
+    font-family: var(--font-family);
+}
+
+.community-comment-item-description {
+    color: #6a7282;
+    font-family: var(--font-family);
+}
+
+.community-comment-item-time {
+    margin-left: auto;
+    margin-bottom: auto;
+    font-size: 1.3rem;
+    color: #6a7282;
+    font-family: var(--font-family);
 }

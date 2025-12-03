@@ -42,6 +42,7 @@ function loadComponentScripts(element) {
 
 const USERS_DB_NAME = "completer-app-db";
 const LOGIN_DB_NAME = "auth-app-db";
+const TASKS_DB_NAME = "tasks-app-db";
 
 
 function getDatabase(databaseName, defaultValue) {

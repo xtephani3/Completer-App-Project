@@ -35,7 +35,7 @@
             </div>
           </div>
           <span slot="card-counter">
-            <h3 class="card-counter"> 00</h3>
+            <h3 id="dashboard-task-counter" class="card-counter">00</h3>
           </span>
 
           <span slot="card-counter-text">
@@ -112,14 +112,8 @@
           </span>
 
           <div slot="dashboard-actions-button">
-            <div class="recent-tasks-checkmark-wrap">
-              <img src="/assets/images/svg/checkmarkFive.svg" />
-              <span slot="dashboard-action-text">
-            <p>No tasks yet</p>
-          </span>
-            
-            </div>
-
+            <div id="dashboard-recent-tasks-display-container"></div>
+          
           </div>
           
         </dashboard-actions>
